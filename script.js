@@ -8,26 +8,6 @@ var i = 10
 }
 console.log('i form gloabal: ', i)
 
-console.log('-let army functions--------')
-
-function makeArmy() {
-  var shooters = []
-  // for (var i = 1; i < 11; i++) { there are wrong numers
-  for (let i = 1; i < 11; i++) {
-    var shooter = function () {
-      console.log('I shooter with nomer: ', i)
-    }
-    shooters.push(shooter)
-  }
-  return shooters
-}
-
-var numbers = [0, 4, 9]
-var shooters = makeArmy()
-for (let num of numbers) {
-  shooters[num]()
-}
-
 console.log('-const redifenetions-----------------')
 
 // const ARR - error Uncaught SyntaxError: Missing initializer in const declaration
