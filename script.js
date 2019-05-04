@@ -20,3 +20,23 @@ catchPromise.then(() => { }).then(()=>{ }).then()
 catchPromise.catch(() => {
  console.log('catch error!')
 })
+
+// // ++ promises with catch
+// console.log('--- catch promises-more----------')
+// var catchPromiseMore = new Promise((_resolve, _reject) => {
+//  _resolve('catchPromise ')
+// })
+
+// var catchPromiseInside
+
+// catchPromiseMore.then((str) => { 
+//   console.log( 'resolve! ')
+//   catchPromiseInside = new Promise((_sesolve, _reject) => {
+//    _reject(str + 'catchPromiseInside ')
+//   })
+//   return catchPromiseInside
+// })
+
+// catchPromiseInside.catch((str) => {
+//  console.log(str + 'catch error+++++++++!')
+// })
