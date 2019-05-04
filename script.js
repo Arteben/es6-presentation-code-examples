@@ -4,9 +4,7 @@ console.log('-let army functions--------')
 function makeArmyWithVAR() {
   var shooters = []
   for (var i = 1; i < 11; i++) {
-    var shooter = function () {
-      console.log('I shooter from VAR with nomer: ', i)
-    }
+    var shooter = function () {  console.log('I shooter from VAR with nomer: ', i) }
     shooters.push(shooter)
   }
   return shooters
@@ -15,13 +13,14 @@ function makeArmyWithVAR() {
 function makeArmyWithLET() {
   var shooters = []
   for (let i = 1; i < 11; i++) {
-    var shooter = function () {
-      console.log('I shooter from LET with nomer: ', i)
-    }
+    var shooter = function () { console.log('I shooter from LET with nomer: ', i) }
     shooters.push(shooter)
   }
   return shooters
 }
+
+// var varShooters = makeArmyWithVAR()
+// letShooters[num]()
 
 var numbers = [0, 4, 9]
 var varShooters = makeArmyWithVAR()
