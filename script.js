@@ -1,18 +1,19 @@
 
 // ++++ simple promises
-console.log('simple promises----------')
-var simplePromise = new Promise((_resolve, _reject) => {
-  _resolve('begin')
-})
+// console.log('simple promises----------')
+// var simplePromise = new Promise((_resolve, _reject) => {
+//   _resolve('begin')
+// })
 
-simplePromise.then((str) => `${str} thirst`)
-             .then((str) => `${str} second`)
-             .then((str) => console.log(str))
+// simplePromise.then((str) => `${str} first`)
+//              .then((str) => `${str} second`)
+//              .then((str) => console.log(str))
+//                              begin first second
 
 // ++ promises with catch
 console.log('--- catch promises-----------')
 var catchPromise = new Promise ((_resolve, _reject) => {
- console.log('Some error!')
+ console.log('there is some error!')
  _reject()
 })
 
@@ -20,6 +21,12 @@ catchPromise.then(() => { }).then(()=>{ }).then()
 catchPromise.catch(() => {
  console.log('catch error!')
 })
+
+console.log('there is after catch...')
+
+// there is some error!
+// there is after catch...
+// catch error!
 
 // // ++ promises with catch
 // console.log('--- catch promises-more----------')
