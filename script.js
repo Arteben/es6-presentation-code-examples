@@ -1,1 +1,3 @@
-console.log('hi!')
+
+import firstModuleFunction from './firstModule.js'
+firstModuleFunction()
